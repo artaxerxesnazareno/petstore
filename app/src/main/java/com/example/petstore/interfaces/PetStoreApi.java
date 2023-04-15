@@ -1,4 +1,6 @@
-package com.example.petstore;
+package com.example.petstore.interfaces;
+
+import com.example.petstore.models.Pet;
 
 import java.util.List;
 
@@ -11,7 +13,7 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-public interface PetStoreService {
+public interface PetStoreApi {
     @GET("/pet/{petId}")
     Call<Pet> getPet(@Path("petId") long petId);
 

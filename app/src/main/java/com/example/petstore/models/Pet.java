@@ -1,4 +1,4 @@
-package com.example.petstore;
+package com.example.petstore.models;
 
 public class Pet {
     private String name;

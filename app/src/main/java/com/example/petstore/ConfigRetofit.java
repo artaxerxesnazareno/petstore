@@ -2,6 +2,8 @@ package com.example.petstore;
 
 import android.app.Application;
 
+import com.example.petstore.interfaces.PetStoreApi;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -21,7 +23,7 @@ public class ConfigRetofit extends Application {
                 .build();
     }
 
-    public PetStoreService getPetStoreService() {
-        return retrofit.create(PetStoreService.class);
+    public PetStoreApi getPetStoreService() {
+        return retrofit.create(PetStoreApi.class);
     }
 }
